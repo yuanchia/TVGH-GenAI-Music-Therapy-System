@@ -1,0 +1,153 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<title>TVGH GenAI Music Therapy System</title>
+</head>
+<body>
+
+    <div id="header" class="container-fluid">
+        <div class="row" style="text-align: center;"/>
+        <div class="row">
+            <h1>TVGH GenAI Music Therapy System</h1>
+        </div>
+    </div>
+
+<div class="container">
+    <h2>Abstract</h2>
+    <p>
+        北榮生成式人工智慧音樂療法系統（TVGH GenAI Music Therapy System），在概念上類似於自動化藥師，主要對照心率變異性（HRV）自律神經系統活動，副以腦電波（EEG）或其他生物回饋感測器資料，實現個體化的音樂元素調整與音訊譜分析，最終形成一套完善的人工智慧音樂療法系統。
+    </p>
+</div>
+
+<div class="container" id="abstractdiv">
+    <h2>「客製化的曲庫」並「協助個案達成目標」</h2>
+    <p>透過 AI Music Therapy 系統與自神經系統互動，可達「客製化的曲庫」並「協助個案達成目標」:
+    </p>
+    <table class="table table-responsive">
+        <thead>
+        <tr class="text-center">
+            <td>desc</td>
+            <td><b>MusicGen</b></td>
+            <td><b>MusicGen Stereo</b></td>
+            <td>MusicLM</td>
+            <td>Riffusion</td>
+            <td>Musai</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="desc">Pre-Test 前測(1) 海浪聲，與 Post-Test 後測結果</td>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/musicgen/000_sample.mp3" type="audio/mpeg"></audio></td>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/musicgen_stereo/000_sample.mp3" type="audio/mpeg"></audio></td>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/musiclm/000_sample.mp3" type="audio/mpeg"></audio></td>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/riffusion/000_sample.mp3" type="audio/mpeg"></audio></td>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/musai/000_sample.mp3" type="audio/mpeg"></audio></td>
+        </tr>
+        <tr>
+            <td class="desc">Pre-Test 前測(2) 瀑布聲，與 Post-Test 後測結果</td>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/musicgen/001_sample.mp3" type="audio/mpeg"></audio></td>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/musicgen_stereo/001_sample.mp3" type="audio/mpeg"></audio></td>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/musiclm/001_sample.mp3" type="audio/mpeg"></audio></td>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/riffusion/001_sample.mp3" type="audio/mpeg"></audio></td>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/musai/001_sample.mp3" type="audio/mpeg"></audio></td>
+        </tr>
+        <tr>
+            <td class="desc">Pre-Test 前測 (3) 溪流聲，與 Post-Test 後測結果</td>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/musicgen/002_sample.mp3" type="audio/mpeg"></audio></td>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/musicgen_stereo/002_sample.mp3" type="audio/mpeg"></audio></td>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/musiclm/002_sample.mp3" type="audio/mpeg"></audio></td>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/riffusion/002_sample.mp3" type="audio/mpeg"></audio></td>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/musai/002_sample.mp3" type="audio/mpeg"></audio></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="container" id="abstractdiv">
+    <h2>Melody conditioning</h2>
+    <p>音樂刺激 ANS 自律神經系統，功能是調節人體的心跳、呼吸速度、神經傳導、血壓和內分泌</p>
+    <table class="table table-responsive">
+        <thead>
+        <tr class="text-center">
+            <td>Source of Melody</td>
+            <td>desc</td>
+            <td><b>MusicGen</b></td>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- BACH -->
+        <tr>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/chroma/bach%20-%20condition.mp3" type="audio/mpeg"></audio></td>
+            <td class="desc">「激發副交感神經系統」：柔和音樂能夠刺激並活化副交感神經系統。</td>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/chroma/bach%20-%20An%20energetic%20hip-hop%20music%20piece,%20with%20synth%20sounds%20and%20strong%20bass.%20There%20is%20a%20rhythmic%20hi-hat%20patten%20in%20the%20drums.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <td class="text-center">-</td>
+            <td class="desc">「促進交感神經系統」：活躍的音樂可以促進血流速度，刺激並活化交感神經系統。</td>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/chroma/bach%20-%20An%2080s%20driving%20pop%20song%20with%20heavy%20drums%20and%20synth%20pads%20in%20the%20background.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+            <td class="text-center">-</td>
+            <td class="desc">「自律神經總功率調節」：包含低頻率的自然聲音，如頌缽或流水聲，這些均能從基本頻率產生清晰音高的諧音和不清晰音高的非諧音。</td>
+            <td class="text-center"><audio controls class="sample_audio"><source src="samples/chroma/bach%20-%2090s%20rock%20song%20with%20electric%20guitar%20and%20heavy%20drums.wav" type="audio/wav"></audio></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="container" id="abstractdiv">
+    <h2>5 種音樂風格</h2>
+    <p>每種音樂風格之內皆具有各 5 首樂曲</p>
+    <table class="table table-responsive">
+        <thead>
+        <tr class="text-center">
+            <td>desc</td>
+            <td><b>GenAI Music Therapy System </b></td>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- BACH -->
+        <tr>
+            <td class="desc">台灣民謠</td>
+            <td class="text-center"><audio controls class="long_audio"><source src="samples/musicgen/long_0_sample.mp3" type="audio/mp3"></audio></td>
+        </tr>
+        <tr>
+            <td class="desc">日本民謠</td>
+            <td class="text-center"><audio controls class="long_audio"><source src="samples/musicgen/long_1_sample.mp3" type="audio/mp3"></audio></td>
+        </tr>
+        <tr>
+            <td class="desc">以色列民謠</td>
+            <td class="text-center"><audio controls class="long_audio"><source src="samples/musicgen/long_2_sample.mp3" type="audio/mp3"></audio></td>
+        </tr>
+		<tr>
+            <td class="desc">印度民謠</td>
+            <td class="text-center"><audio controls class="long_audio"><source src="samples/musicgen/long_2_sample.mp3" type="audio/mp3"></audio></td>
+        </tr>
+		<tr>
+            <td class="desc">美國民謠</td>
+            <td class="text-center"><audio controls class="long_audio"><source src="samples/musicgen/long_2_sample.mp3" type="audio/mp3"></audio></td>
+        </tr>
+
+<script>
+function setupCallback(elem, elems) {
+  elem.addEventListener("play", function () {
+    for (var other of elems) {
+      if (other !== elem) {
+        other.pause();
+        // other.currentTime = 0.;
+      }
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.body.getElementsByTagName("audio");
+  for (var elem of elems) {
+    setupCallback(elem, elems);
+  }
+});
+</script>
+</body>
+</html>
